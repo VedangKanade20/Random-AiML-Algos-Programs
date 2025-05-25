@@ -31,3 +31,14 @@ contains(X,Y,5):-N is Y-4+X, start(4,N).
 contains(X,Y,6):-N is X-3+Y, start(N,3).
 contains(X,Y,7):-N is X+Y, start(N,0).
 contains(X,Y,8):-N is X+Y, start(0,N).
+
+% This program performs operations based on the provided selection.
+% To run this program, load it into your Prolog interpreter and execute the desired predicate.
+% Start the game with both jugs empty 
+%?- start(0, 0).
+
+% Start the game with 4-liter jug full and 3-liter jug empty
+%?- start(4, 0).
+
+% Start the game with 4-liter jug empty and 3-liter jug full
+%?- start(0, 3).
